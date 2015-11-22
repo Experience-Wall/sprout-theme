@@ -28,6 +28,9 @@ var config = {
             {
                 test: /\.scss$/,
                 loaders: ["style", "css", "sass"]
+            },
+            {
+                test: /\.html$/, loader: "html"
             }
         ]
     },

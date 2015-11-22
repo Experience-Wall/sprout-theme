@@ -6,24 +6,24 @@ var Vue = require('vue');
 
 Vue.use(require('vue-resource'));
 
-var app = new Vue({
-    el: '#app',
-    data: {
-        view: 'page-a'
-    },
-    http: {
-        root: '/data',
-        headers: {
-            Authorization: 'Basic YXBpOnBhc3N3b3Jk'
-        }
+var VueRouter = require('vue-router');
+Vue.use(VueRouter);
+
+var app = Vue.extend({});
+
+
+let loading = require('./loading');
+
+
+let router = new VueRouter();
+
+
+router.map({
+    '/': {
+        component: require('./view/category/index')
     }
 });
 
-let loadding = new Vue({
-    el: '#loading',
-    ready: function(){
-        this.show = false;
-    }
-});
+router.start(app, '#app');
 
 

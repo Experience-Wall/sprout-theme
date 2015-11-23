@@ -1,3 +1,7 @@
-<ul>
-<li v-for="category in categorys">{{ category }}</li>
+<ul class="category-list">
+  <li v-for="category in categorys">
+    <a href="/categoy/{{category}}">
+      {{ category }}
+    </a>
+  </li>
 </ul>

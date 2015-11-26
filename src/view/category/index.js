@@ -1,10 +1,8 @@
 'use strict';
 
-let Vue = require('vue');
-
-
-module.exports = Vue.extend({
+module.exports = {
     template: require('./template.html'),
+    replace: true,
     data: function(){
         return {
             categorys: []
@@ -16,4 +14,4 @@ module.exports = Vue.extend({
             this.categorys = data.categoryMap;
         });
     }
-});
+};

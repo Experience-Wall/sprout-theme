@@ -6,24 +6,44 @@ var Vue = require('vue');
 
 Vue.use(require('vue-resource'));
 
-var VueRouter = require('vue-router');
-Vue.use(VueRouter);
 
-var app = Vue.extend({});
 
+let app = new Vue({
+    el: '#app',
+    data: {
+        view: 'category'
+    },
+    components: {
+        'category': function(resolve){
+            require(['./view/category/index.js'], resolve);
+        }
+    }
+});
+
+app.view = 'category';
 
 let loading = require('./loading');
 
 
-let router = new VueRouter();
 
+let getRoute = () => {
+    return window.location.hash.split('/').slice(1);
+};
 
-router.map({
-    '/': {
-        component: require('./view/category/index')
+let showCategory = () => {
+    
+};
+
+let route = () => {
+    let routeArr = getRoute();
+    
+    if ( routeArr.length === 0 || routeArr[0] === '' ) {
+        showCategory();
+    } else {
+        
     }
-});
-
-router.start(app, '#app');
+};
 
 
+window.addEventListener('hashchange', route);
+window.addEventListener('load', route);

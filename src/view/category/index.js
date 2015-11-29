@@ -1,8 +1,10 @@
 'use strict';
 
+require('./style.scss');
+
 module.exports = {
     template: require('./template.html'),
-    replace: true,
+    replace: false,
     data: function(){
         return {
             categorys: []
@@ -11,7 +13,9 @@ module.exports = {
     ready: function(){
         this.$http.get('/data/mapping.json', function(data){
             console.log(data);
-            this.categorys = data.categoryMap;
+            this.categorys = Object.keys(data.categoryMap).map(function(k){
+                return [k, data.categoryMap[k]];
+            });
         });
     }
 };

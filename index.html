@@ -22,7 +22,7 @@
       
       .dash-loadding {
       position: absolute;
-      top: 30%;
+      top: 20%;
       left: 50%;
       margin-left: -20px;
       z-index: 99;
@@ -86,7 +86,9 @@
     <div id="app">
 
       
-      <component is="{{view}}"></component>
+      <w-category v-bind:class="{'off': onCategory}"></w-category>
+
+      <button v-on:click="c">click me</button>
       
     </div>
 

@@ -1,3 +1,7 @@
 {
-    "categoryMap": ["uncategorized", "A", "B"]
+  "categoryMap" : {
+    "uncategorized" : 6,
+    "css" : 1,
+    "javascript" : 1
+  }
 }

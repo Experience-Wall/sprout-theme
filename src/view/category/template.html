@@ -1,7 +1,10 @@
-<ul class="category-list">
+<ul>
   <li v-for="category in categorys">
-    <a href="/categoy/{{category}}">
-      {{ category }}
-    </a>
+    <span class="c-name-container">
+      <a href="/categoy/{{category}}">
+        {{ category[0] }}        
+      </a>
+    </span><!--
+ --><span class="c-number">{{ category[1] }}</span>
   </li>
 </ul>

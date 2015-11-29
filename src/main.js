@@ -11,16 +11,23 @@ Vue.use(require('vue-resource'));
 let app = new Vue({
     el: '#app',
     data: {
-        view: 'category'
+        onCategory: false
     },
     components: {
-        'category': function(resolve){
-            require(['./view/category/index.js'], resolve);
+        'w-category': Vue.extend(require('./view/category'))
+    },
+    methods: {
+        c: function(){
+            this.onCategory = !this.onCategory;
         }
     }
 });
 
-app.view = 'category';
+document.addEventListener("DOMContentLoaded", function(event) {
+    app.viewx = 'w-category';
+});
+
+
 
 let loading = require('./loading');
 

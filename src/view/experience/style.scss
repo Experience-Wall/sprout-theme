@@ -4,5 +4,48 @@
 @import "./../../scss/ceaser-easing/_easing-vars.sass";
 
 w-experience {
-    display: inline-block
+    display: block;
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition: all 1.2s ceaser($easeOutCubic);
+    
+    &.off {
+        right: -75%;
+    }
+    
+    ul {
+        list-style: none;
+        width: 85%;
+    }
+    
+    li {
+        background-color: #fff;
+        border-radius: 1px;
+        box-shadow: 2px 2px 5px #999;
+        padding: 8px 16px;
+        margin: 24px 0;
+        overflow: hidden;
+        
+        & > div {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        h2, p {
+            margin: 0;
+        }
+    }
+}
+
+.expl-transition {
+    transition: all .3s ease;
+    height: 100px;
+}
+
+.expl-leave {
+    height: 0;
 }

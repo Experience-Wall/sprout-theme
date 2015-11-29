@@ -17,7 +17,6 @@
       background-color: #C7D693;
       height: 100%;
       width: 100%;
-      overflow: hidden;
       }
       
       .dash-loadding {
@@ -88,9 +87,9 @@
       
       <w-category v-bind:class="{'off': !onCategory}"></w-category>
 
-      <w-experience></w-experience>
+      <w-experience v-bind:class="{'off': onCategory}"></w-experience>
       
-      <button v-on:click="c">click me</button>
+
       
     </div>
 

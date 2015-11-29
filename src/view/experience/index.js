@@ -8,11 +8,20 @@ module.exports = {
     http: {
         root: '/data'
     },
+    data: function(){
+        return {
+            experiences: []
+        };
+    },
     events: {
         changeCategory: function(category) {
+            let self = this;
             this.$http.get(category + '/' + category + '-0.json', (data) => {
                 console.log(data);
+                self.experiences = data;
             });
         }
     }
 };
+
+

@@ -9,9 +9,11 @@ w-category {
     overflow: hidden;
     display: block;
     
+    
     &.off {
         ul {
             margin-left: -40%;
+            position: fixed;
         }
         
         li {

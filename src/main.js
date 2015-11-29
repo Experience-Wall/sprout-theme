@@ -18,15 +18,13 @@ let app = new Vue({
         'w-experience': Vue.extend(require('./view/experience'))
     },
     methods: {
-        c: function(){
-            this.onCategory = !this.onCategory;
-        }
+        
     }
 });
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    app.viewx = 'w-category';
-});
+// document.addEventListener("DOMContentLoaded", function(event) {
+
+// });
 
 
 

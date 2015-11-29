@@ -3,5 +3,6 @@
     "uncategorized" : 6,
     "css" : 1,
     "javascript" : 1
-  }
+  },
+  "perPage" : 10
 }

@@ -7,14 +7,15 @@ var Vue = require('vue');
 Vue.use(require('vue-resource'));
 
 
-
 let app = new Vue({
     el: '#app',
     data: {
-        onCategory: false
+        onCategory: false,
+        category: ''
     },
     components: {
-        'w-category': Vue.extend(require('./view/category'))
+        'w-category': Vue.extend(require('./view/category')),
+        'w-experience': Vue.extend(require('./view/experience'))
     },
     methods: {
         c: function(){
@@ -37,17 +38,14 @@ let getRoute = () => {
     return window.location.hash.split('/').slice(1);
 };
 
-let showCategory = () => {
-    
-};
-
 let route = () => {
     let routeArr = getRoute();
     
     if ( routeArr.length === 0 || routeArr[0] === '' ) {
-        showCategory();
+        app.onCategory = true;
     } else {
-        
+        app.onCategory = false;
+        app.$broadcast('changeCategory', routeArr[0]);
     }
 };
 

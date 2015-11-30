@@ -42,10 +42,12 @@ w-experience {
 }
 
 .expl-transition {
-    transition: all .3s ease;
-    height: 100px;
+    transition: all .4s ceaser($easeOutCubic);
+    margin-top: 0;
+    opacity: 1;
 }
 
 .expl-leave {
-    height: 0;
+    margin-top: -100px;
+    opacity: 0;
 }

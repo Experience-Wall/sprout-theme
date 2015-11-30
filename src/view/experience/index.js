@@ -2,6 +2,11 @@
 
 require('./style.scss');
 
+let $ = require('../../../node_modules/jquery/src/core.js');
+
+
+//let $ = require('jquery');
+
 module.exports = {
     template: require('./template.html'),
     replace: false,
@@ -21,6 +26,11 @@ module.exports = {
                 self.experiences = data;
             });
         }
+    },
+    ready: function(){
+        $(document).on('click', function(){
+            console.log('click');
+        });
     }
 };
 

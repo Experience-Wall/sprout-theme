@@ -6,6 +6,11 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    li {
+        background-color: white;
+        position: absolute;
+    }
 }
 
 .letter {
@@ -15,15 +20,42 @@
 
 
 .letter-e {
+    &.active {
+        li {
+            &:nth-child(1) {
+                transform: scale(1, 1);
+            }
+
+            &:nth-child(2) {
+                transform: scale(1, 1);
+            }
+
+            &:nth-child(3) {
+                transform: scale(1, 1);
+            }
+
+            &:nth-child(4) {
+                transform: scale(1, 1);
+            }
+        }
+    }
     li {
-        background-color: white;
-        position: absolute;
+        
+        transition: {
+            property: transform;
+        };
         
         &:nth-child(1) {
             height: 100%;
             width: 40%;
             top: 0;
             left: 0;
+            transition: {
+                delay: 100ms;
+                duration: 100ms;
+            };
+            transform-origin: top;
+            transform: scale(1, 0);
         }
 
         &:nth-child(2) {
@@ -31,6 +63,12 @@
             height: 25%;
             top: 0;
             left: 0;
+            transition: {
+                delay: 100ms;
+                duration: 100ms;
+            };
+            transform-origin: left;
+            transform: scale(0, 1);
         }
 
         &:nth-child(3) {
@@ -38,6 +76,12 @@
             height: 25%;
             top: 37.5%;
             left: 0;
+            transition: {
+                delay: 100ms;
+                duration: 100ms;
+            };
+            transform-origin: left;
+            transform: scale(0, 1);
         }
 
         &:nth-child(4) {
@@ -45,6 +89,12 @@
             height: 25%;
             bottom: 0;
             left: 0;
+            transition: {
+                delay: 100ms;
+                duration: 100ms;
+            };
+            transform-origin: left;
+            transform: scale(0, 1);
         }
     }
 }

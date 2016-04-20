@@ -12,7 +12,7 @@ module.exports = {
     },
     ready: function(){
         this.$http.get('/data/mapping.json', function(data){
-            console.log(data);
+
             this.categorys = Object.keys(data.categoryMap).map(function(k){
                 return [k, data.categoryMap[k]];
             });

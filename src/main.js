@@ -37,8 +37,7 @@ let getRoute = () => {
 };
 
 let route = () => {
-    let routeArr = getRoute();
-    
+    let routeArr = getRoute();    
     if ( routeArr.length === 0 || routeArr[0] === '' ) {
         app.onCategory = true;
     } else {

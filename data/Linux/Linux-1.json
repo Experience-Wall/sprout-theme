@@ -1,0 +1,9 @@
+[ {
+  "info" : {
+    "title" : "gentoo风扇控制",
+    "date" : "2015-12-15 13:54:09",
+    "tag" : ""
+  },
+  "experience" : "<pre><code class=\"shell\">    emerge sys-apps/lm&#95;sensors\n    sensors-detect\n    然后选择检测到dirver&#40;我这次是i2c-dev...&#41;写入到`/etc/conf.d/lm&#95;sensors` MODULE&#95;0='xxx'\n    /etc/init.d/lm&#42;sensors start #启动\n    c-update add lm&#42;sensors default #设置自动启动\n</code></pre>",
+  "index" : 10
+} ]

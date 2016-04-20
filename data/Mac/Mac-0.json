@@ -1,0 +1,49 @@
+[ {
+  "info" : {
+    "title" : "route 命令",
+    "date" : "2016-02-09 03:34:33",
+    "tag" : ""
+  },
+  "experience" : "<p>OSX 的 route 命令跟 linux 不一样，一般来说需要在 route 后面加上 -n</p>",
+  "index" : 0
+}, {
+  "info" : {
+    "title" : "pipe",
+    "date" : "2016-01-04 04:35:36",
+    "tag" : ""
+  },
+  "experience" : "<p>osx 下的管道命令是不是跟 linux 不一样？并发启动？例如 <code>ps -e | grep emacs</code> 在 Linux 下只会输出一个 emacs 进程，但是在 osx 下会输出两个，一个是 grep 的.</p>",
+  "index" : 1
+}, {
+  "info" : {
+    "title" : "sw_vers显示系统信息",
+    "date" : "2015-12-29 06:55:15",
+    "tag" : ""
+  },
+  "experience" : null,
+  "index" : 2
+}, {
+  "info" : {
+    "title" : "ssh locate问题",
+    "date" : "2015-12-28 03:15:58",
+    "tag" : ""
+  },
+  "experience" : "<p>ssh remote出现<pre><code>perl: warning: Please check that your locale settings:\n\tLANGUAGE = &#40;unset&#41;,\n\tLC&#95;ALL = &quot;en&#95;US.UTF-8&quot;,\n\tLC&#95;CTYPE = &quot;en&#95;US.UTF-8&quot;,\n\tLANG = &quot;zh&#95;CN.UTF-8&quot;\n    are supported and installed on your system.\nperl: warning: Falling back to a fallback locale &#40;&quot;zh&#95;CN.UTF-8&quot;&#41;.\n </code></pre> 之类的问题,需要在当前机子上设置环境变量<pre><code>export LC&#95;ALL=zh&#95;CN.UTF-8\nexport LC&#95;CTYPE=zh&#95;CN.UTF-8\n </code></pre> 值为错误中的LANG变量</p>",
+  "index" : 3
+}, {
+  "info" : {
+    "title" : "install xcode command-line",
+    "date" : "2015-12-26 12:03:48",
+    "tag" : ""
+  },
+  "experience" : "<p>xcode-select --install</p>",
+  "index" : 4
+}, {
+  "info" : {
+    "title" : "dd命令非常慢",
+    "date" : "2015-12-22 12:48:15",
+    "tag" : "command,mac,dd"
+  },
+  "experience" : "<p>mac下的dd命令非常慢，只要将diskN 变成 rdiskN 就能改善 <code>/dev/rdisk nodes are character-special devices, but are “raw” in the BSD sense and force block-aligned I/O. They are closer to the physical disk than the buffer cache. /dev/disk nodes, on the other hand, are buffered block-special devices and are used primarily by the kernel’s filesystem code.</code></p>",
+  "index" : 5
+} ]

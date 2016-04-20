@@ -1,75 +1,9 @@
 [ {
-  "experience" : "hello",
   "info" : {
-    "title" : "bbxx",
-    "date" : "2015-11-20 17:21:42",
+    "title" : "Date",
+    "date" : "2016-03-22 16:21:14",
     "tag" : ""
   },
+  "experience" : "<pre><code class=\"javascript\">            format: function&#40;date, format&#41;{\n                if&#40;format === undefined&#41;{\n                    format = date;\n                    date = new Date&#40;&#41;;\n                }\n                \n                var map = {\n                    &quot;M&quot;: date.getMonth&#40;&#41; + 1, //月份 \n                    &quot;d&quot;: date.getDate&#40;&#41;, //日 \n                    &quot;h&quot;: date.getHours&#40;&#41;, //小时 \n                    &quot;m&quot;: date.getMinutes&#40;&#41;, //分 \n                    &quot;s&quot;: date.getSeconds&#40;&#41;, //秒 \n                    &quot;q&quot;: Math.floor&#40;&#40;date.getMonth&#40;&#41; + 3&#41; / 3&#41;, //季度 \n                    &quot;S&quot;: date.getMilliseconds&#40;&#41; //毫秒 \n                };\n                format = format.replace&#40;/&#40;&#91;yMdhmsqS&#93;&#41;+/g, function&#40;all, t&#41;{\n                    var v = map&#91;t&#93;;\n                    if&#40;v !== undefined&#41;{\n                        if&#40;all.length &gt; 1&#41;{\n                            v = '0' + v;\n                            v = v.substr&#40;v.length-2&#41;;\n                        }\n                        return v;\n                    }\n                    else if&#40;t === 'y'&#41;{\n                        return &#40;date.getFullYear&#40;&#41; + ''&#41;.substr&#40;4 - all.length&#41;;\n                    }\n                    return all;\n                }&#41;;\n                return format;\n            }\n</code></pre>",
   "index" : 0
-}, {
-  "experience" : "helloo",
-  "info" : {
-    "title" : "bbx",
-    "date" : "2015-11-20 17:21:00",
-    "tag" : ""
-  },
-  "index" : 1
-}, {
-  "experience" : "helloo",
-  "info" : {
-    "title" : "bbc",
-    "date" : "2015-11-20 16:12:44",
-    "tag" : ""
-  },
-  "index" : 2
-}, {
-  "experience" : "helloo",
-  "info" : {
-    "title" : "res",
-    "date" : "2015-11-20 16:12:00",
-    "tag" : ""
-  },
-  "index" : 3
-}, {
-  "experience" : "helloo",
-  "info" : {
-    "title" : "www",
-    "date" : "2015-11-20 16:11:41",
-    "tag" : ""
-  },
-  "index" : 4
-}, {
-  "experience" : "helloo",
-  "info" : {
-    "title" : "bbs",
-    "date" : "2015-11-20 16:11:34",
-    "tag" : ""
-  },
-  "index" : 5
-},
-  {
-      "experience" : "helloo",
-      "info" : {
-          "title" : "bbs",
-          "date" : "2015-11-20 16:11:34",
-          "tag" : ""
-      },
-      "index" : 5
-  },{
-      "experience" : "helloo",
-      "info" : {
-          "title" : "bbs",
-          "date" : "2015-11-20 16:11:34",
-          "tag" : ""
-      },
-      "index" : 5
-  },
-  {
-      "experience" : "helloo",
-      "info" : {
-          "title" : "bbs",
-          "date" : "2015-11-20 16:11:34",
-          "tag" : ""
-      },
-      "index" : 5
-  }]
+} ]

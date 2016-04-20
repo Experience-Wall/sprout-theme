@@ -2,7 +2,7 @@
 
 require('./style.scss');
 
-let $ = require('../../../node_modules/jquery/src/core.js');
+let $ = require('jquery');
 
 
 //let $ = require('jquery');

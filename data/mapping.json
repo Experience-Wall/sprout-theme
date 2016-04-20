@@ -1,8 +1,27 @@
 {
   "categoryMap" : {
-    "uncategorized" : 6,
-    "css" : 1,
-    "javascript" : 1
+    "uncategorized" : 1,
+    "Angular" : 4,
+    "Angular2" : 1,
+    "CCPP" : 2,
+    "JS" : 9,
+    "Elisp" : 1,
+    "ThreeJs" : 1,
+    "Ionic" : 3,
+    "shell" : 3,
+    "Mac" : 6,
+    "Brower" : 2,
+    "ReactNative" : 1,
+    "Linux" : 11,
+    "Haskell" : 1,
+    "CSS" : 1,
+    "Raspberry" : 2,
+    "HTML" : 2,
+    "NodeJs" : 3,
+    "Database" : 2,
+    "ArchLinux" : 1,
+    "Emacs" : 5,
+    "Functional" : 1
   },
   "perPage" : 10
 }

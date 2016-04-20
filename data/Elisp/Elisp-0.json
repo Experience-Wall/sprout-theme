@@ -1,0 +1,9 @@
+[ {
+  "info" : {
+    "title" : "elisp变量问题",
+    "date" : "2016-01-12 15:22:48",
+    "tag" : ""
+  },
+  "experience" : "<p>很多变量都是和buffer绑定的，坑爹！</p>",
+  "index" : 0
+} ]

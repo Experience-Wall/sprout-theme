@@ -1,0 +1,9 @@
+[ {
+  "info" : {
+    "title" : "python version",
+    "date" : "2016-02-09 04:11:23",
+    "tag" : ""
+  },
+  "experience" : "<p>arch 默认的 python 版本是 3.x，我觉得正常人都会改回来，将/usr/bin/python 真个符号连接删掉在新建一个指向 python2 的即可</p>",
+  "index" : 0
+} ]

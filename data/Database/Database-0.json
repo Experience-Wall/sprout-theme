@@ -1,0 +1,17 @@
+[ {
+  "info" : {
+    "title" : "sqlite的并发问题",
+    "date" : "2016-01-29 16:52:57",
+    "tag" : "database"
+  },
+  "experience" : "<p>sqlite3 在 python 中的连接是不能并发的，创建的连接不能在另一个线程中调用，否则会抛出错误，所以在 web 框架中是不能共用一个连接来处理请求。</p>",
+  "index" : 0
+}, {
+  "info" : {
+    "title" : "sqlite容错性比较弱",
+    "date" : "2016-01-19 06:38:43",
+    "tag" : ""
+  },
+  "experience" : "<p>sqlite 的容错性比较弱，程序中断或者突然断电之类的都会造成<code>database disk image is malformed</code>错误。</p>",
+  "index" : 1
+} ]

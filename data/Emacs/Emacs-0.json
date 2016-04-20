@@ -1,0 +1,41 @@
+[ {
+  "info" : {
+    "title" : "elip repl",
+    "date" : "2015-12-28 15:41:52",
+    "tag" : ""
+  },
+  "experience" : "<p><code>ielm</code> 打开 ielm 交互shell</p>",
+  "index" : 0
+}, {
+  "info" : {
+    "title" : "keyboard layout",
+    "date" : "2015-12-28 15:41:31",
+    "tag" : ""
+  },
+  "experience" : "<p>keyboard-translate</p>",
+  "index" : 1
+}, {
+  "info" : {
+    "title" : "elisp性能检测",
+    "date" : "2015-12-28 15:41:03",
+    "tag" : ""
+  },
+  "experience" : "<p><code>profiler-start</code> and <code>profiler-report</code></p>",
+  "index" : 2
+}, {
+  "info" : {
+    "title" : "ido selet text",
+    "date" : "2015-12-28 15:40:46",
+    "tag" : ""
+  },
+  "experience" : null,
+  "index" : 3
+}, {
+  "info" : {
+    "title" : "term的文本化",
+    "date" : "2015-12-28 15:40:12",
+    "tag" : ""
+  },
+  "experience" : "<p><code>term</code> 模式默认是无法进行文本操作的. 此时需要将term转换为text模式 <code>C-x C-j</code> 退出是<code>C-x C-k</code></p>",
+  "index" : 4
+} ]

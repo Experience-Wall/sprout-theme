@@ -1,0 +1,25 @@
+[ {
+  "info" : {
+    "title" : "string 比 buffer 在处理字符操作时候更快",
+    "date" : "2016-02-28 08:51:37",
+    "tag" : ""
+  },
+  "experience" : "<p>buffer 主要是用在二进制数据上的，效率实际上比 string 要慢</p>",
+  "index" : 0
+}, {
+  "info" : {
+    "title" : "nvm 安装的版本在系统调用中无效",
+    "date" : "2016-02-05 08:40:31",
+    "tag" : "nodejs"
+  },
+  "experience" : "<p>nvm 安装的 node 版本只是在 shell 中模拟了一下，在系统调用时，还是调用 system 中的版本</p>",
+  "index" : 1
+}, {
+  "info" : {
+    "title" : "seek函数",
+    "date" : "2015-12-21 12:01:01",
+    "tag" : "node,seek"
+  },
+  "experience" : "<p>No! node的设计思想是非阻塞，不要写阻塞的程序！</p>",
+  "index" : 2
+} ]

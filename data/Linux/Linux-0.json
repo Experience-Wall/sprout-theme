@@ -1,0 +1,81 @@
+[ {
+  "info" : {
+    "title" : "同步 lib",
+    "date" : "2016-02-07 02:03:38",
+    "tag" : ""
+  },
+  "experience" : "<p>以前 linux 版本在安装我完应用之后通常需要 ldconfig 和 sync 同步 lib，现在的系统优化得很好了，所以不需要了</p>",
+  "index" : 0
+}, {
+  "info" : {
+    "title" : "编译时*dev包",
+    "date" : "2016-01-24 16:49:48",
+    "tag" : ""
+  },
+  "experience" : "<p>如果在编译的时找不到某某依赖，例如 ruby 依赖，往往是 ruby-dev 库的缺失</p>",
+  "index" : 1
+}, {
+  "info" : {
+    "title" : "umount -l",
+    "date" : "2016-01-20 15:46:02",
+    "tag" : ""
+  },
+  "experience" : "<p><code>umount -l</code> 强行取消挂载</p>",
+  "index" : 2
+}, {
+  "info" : {
+    "title" : "rc.local",
+    "date" : "2016-01-20 15:45:20",
+    "tag" : ""
+  },
+  "experience" : "<p><code>/etc/rc.local</code> 文件在启动的时候初始化一次，可以写入配置</p>",
+  "index" : 3
+}, {
+  "info" : {
+    "title" : "blkid 命令",
+    "date" : "2016-01-20 15:44:09",
+    "tag" : ""
+  },
+  "experience" : "<p><code>blkid</code> 显示所有的挂载项uid</p>",
+  "index" : 4
+}, {
+  "info" : {
+    "title" : "Checkinstall 打包软件",
+    "date" : "2016-01-20 15:26:57",
+    "tag" : ""
+  },
+  "experience" : "<p>编译出来的软件，可以通过 Checkinstall 来打包成安装包</p>",
+  "index" : 5
+}, {
+  "info" : {
+    "title" : "Terminal 冻结与解冻",
+    "date" : "2016-01-20 15:26:15",
+    "tag" : ""
+  },
+  "experience" : "<p>Terminal Ctrl + S is freeze terminal, and Ctrl + Q is unfreeze</p>",
+  "index" : 6
+}, {
+  "info" : {
+    "title" : "Debian family build-dep 命令",
+    "date" : "2016-01-20 15:24:20",
+    "tag" : ""
+  },
+  "experience" : "<p>Debian 家族的系统可以通过<code>build-dep</code>安装编译源码需要的依赖</p>",
+  "index" : 7
+}, {
+  "info" : {
+    "title" : "kali虚拟机安装linux-header",
+    "date" : "2015-12-19 14:22:45",
+    "tag" : ""
+  },
+  "experience" : "<p>通过 apt-get 或者 aptitude 无法安装到 linux-header 是因为源没有打上去，在 kali docs 上将源打上去更新一下就可以</p>",
+  "index" : 8
+}, {
+  "info" : {
+    "title" : "gentoo安装xorg",
+    "date" : "2015-12-18 01:53:38",
+    "tag" : ""
+  },
+  "experience" : "<p>必须要在<code> make.conf </code>里面设置<pre><code>## &#40;For mouse, keyboard, and Synaptics touchpad support&#41;\nINPUT&#95;DEVICES=&quot;evdev synaptics&quot;\n## &#40;For nVidia cards&#41;\nVIDEO&#95;CARDS=&quot;nouveau&quot;\n## &#40;For AMD/ATI cards&#41;\nVIDEO&#95;CARDS=&quot;radeon&quot;\n </code></pre> 之后才能emerge x11-base/xorg-server</p>",
+  "index" : 9
+} ]

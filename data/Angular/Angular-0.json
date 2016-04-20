@@ -1,0 +1,33 @@
+[ {
+  "info" : {
+    "title" : "指令的 scope",
+    "date" : "2016-03-02 03:25:06",
+    "tag" : ""
+  },
+  "experience" : "<p>指令 return 里面的 scope 不只是获取外部的 scope ，如果没有初始化，会与别的指令公用，如果有变量一样，会串染变量</p>",
+  "index" : 0
+}, {
+  "info" : {
+    "title" : "ngModelCtrl.",
+    "date" : "2016-01-05 07:01:33",
+    "tag" : ""
+  },
+  "experience" : null,
+  "index" : 1
+}, {
+  "info" : {
+    "title" : "module初始化问题",
+    "date" : "2016-01-04 12:01:10",
+    "tag" : ""
+  },
+  "experience" : "<p><code>angular.module&#40;'&lt;module name&gt;', &#91;&#93;&#41;</code> 初始化一个module，注意 <code>&#91;&#93;</code> 中括号，漏了或者在别的地方多加就悲剧了，又不报错，不知道哪里错了</p>",
+  "index" : 2
+}, {
+  "info" : {
+    "title" : "jsonp问题",
+    "date" : "2015-12-21 06:05:40",
+    "tag" : ""
+  },
+  "experience" : "<p>jsonp 遇到 <code>Uncaught SyntaxError: Unexpected token :</code>报错，是因为没有设置callback，把返回的 json 当成代码执行了，需要设置 <code>callback=JSON&#95;CALLBACK</code> 参数</p>",
+  "index" : 3
+} ]

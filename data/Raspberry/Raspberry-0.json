@@ -1,0 +1,17 @@
+[ {
+  "info" : {
+    "title" : "屏幕旋转",
+    "date" : "2016-02-12 04:56:25",
+    "tag" : ""
+  },
+  "experience" : "<pre><code>sudo nano /boot/config.txt\ndisplay&#95;rotate=0 Normal\ndisplay&#95;rotate=1 90 degrees\ndisplay&#95;rotate=2 180 degrees\nNOTE: You can rotate both the image and touch interface 180º by entering lcd&#95;rotate=2 instead\ndisplay&#95;rotate=3 270 degrees\ndisplay&#95;rotate=0x10000 horizontal flip\ndisplay&#95;rotate=0x20000 vertical flip\n</code></pre>",
+  "index" : 0
+}, {
+  "info" : {
+    "title" : "display right click",
+    "date" : "2015-12-28 06:48:35",
+    "tag" : ""
+  },
+  "experience" : "<p><code>/etc/X11/xorg.conf </code><pre><code>Section &quot;InputClass&quot;\n   Identifier &quot;calibration&quot;\n   Driver &quot;evdev&quot;\n   MatchProduct &quot;FT5406 memory based driver&quot;\n\n   Option &quot;EmulateThirdButton&quot; &quot;1&quot;\n   Option &quot;EmulateThirdButtonTimeout&quot; &quot;750&quot;\n   Option &quot;EmulateThirdButtonMoveThreshold&quot; &quot;30&quot;\nEndSection\n </code></pre></p>",
+  "index" : 1
+} ]

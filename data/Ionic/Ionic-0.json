@@ -1,0 +1,25 @@
+[ {
+  "info" : {
+    "title" : "ngShow 如果在底部需要 resize content",
+    "date" : "2016-03-01 08:35:29",
+    "tag" : ""
+  },
+  "experience" : "<p>如果动态在底部 show 了内容出来，content 等内容指令是反应不过来的，高度没变，所以需要resize <code>$ionicScrollDelegate.resize&#40;&#41;</code></p>",
+  "index" : 0
+}, {
+  "info" : {
+    "title" : "content问题",
+    "date" : "2016-02-20 18:12:23",
+    "tag" : ""
+  },
+  "experience" : "<p>在用 ionic2 感觉问题还是很大的，例如 content 的滚动并不是用原生滚动来做的，所以在 content 里面 pageX 并不是真实的，而且在 content 里面 fixed 定位也会失效</p>",
+  "index" : 1
+}, {
+  "info" : {
+    "title" : "service和directive的模式",
+    "date" : "2015-12-08 08:05:48",
+    "tag" : " angular, ionic, hybird app"
+  },
+  "experience" : "<p>在ionic的开发中，要搞清楚组件的抽象，service和directive的模式，由于angular的设计模式，很多view层面的东西必须抽到directive上实现，但是不要总想着把directive设计成通用的组件，很多情况下direcitve都是只用在一个地方的，如果需要重用，建议与service结合。</p>",
+  "index" : 2
+} ]

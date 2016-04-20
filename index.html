@@ -84,17 +84,29 @@
     
     <div id="app">
 
-      
-      <w-category v-bind:class="{'off': !onCategory}"></w-category>
 
-      <w-experience v-bind:class="{'off': onCategory}"></w-experience>
-      
+      <div class="main">
 
+        <div class="slide-dash">
+
+          <ul class="letter letter-e">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          
+        </div>
+
+        <div class="category-list"></div>
+        
+      </div>
+      <!-- <w-category v-bind:class="{'off': !onCategory}"></w-category> -->
+
+      <!-- <w-experience v-bind:class="{'off': onCategory}"></w-experience> -->
       
     </div>
-
     
-    <script src="http://localhost:35729/livereload.js"></script>
     <script src="/assets/mainBundle.js"></script>
   </body>
 </html>

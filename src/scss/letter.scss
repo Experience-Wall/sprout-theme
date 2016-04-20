@@ -1,0 +1,50 @@
+
+
+.letter {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.letter {
+    height: 250px;
+    width: 200px;
+}
+
+
+.letter-e {
+    li {
+        background-color: white;
+        position: absolute;
+        
+        &:nth-child(1) {
+            height: 100%;
+            width: 40%;
+            top: 0;
+            left: 0;
+        }
+
+        &:nth-child(2) {
+            width: 100%;
+            height: 25%;
+            top: 0;
+            left: 0;
+        }
+
+        &:nth-child(3) {
+            width: 100%;
+            height: 25%;
+            top: 37.5%;
+            left: 0;
+        }
+
+        &:nth-child(4) {
+            width: 100%;
+            height: 25%;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

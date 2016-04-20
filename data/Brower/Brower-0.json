@@ -1,0 +1,17 @@
+[ {
+  "info" : {
+    "title" : "chrome 关掉跨域",
+    "date" : "2016-03-07 06:20:50",
+    "tag" : ""
+  },
+  "experience" : "<p>mac 或 linux 可以这样 <code>/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --disable-web-security</code></p>",
+  "index" : 0
+}, {
+  "info" : {
+    "title" : "火狐安装插件",
+    "date" : "2016-01-20 15:28:11",
+    "tag" : ""
+  },
+  "experience" : "<p>火狐安装插件可以把插件放到 <code>&#126;/.mozilia/plugin</code> 而不需要 root 权限</p>",
+  "index" : 1
+} ]

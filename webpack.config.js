@@ -9,7 +9,7 @@ var LiveReloadPlugin = require('webpack-livereload-plugin');
 var config = {
     entry: ['./src/main.js'],
     output: {
-        path: __dirname + '/build',
+        path: __dirname + '/assets',
         publicPath: '/assets/',
         contentBase: 'assets/',
         filename: 'mainBundle.js'
@@ -19,7 +19,11 @@ var config = {
             {
                 test: /\.jsx?$/,
                 exclude: /(node_modules|bower_components)/,
-                loader: 'babel' // 'babel-loader' is also a legal name to reference
+                loader: 'babel-loader', // 'babel-loader' is also a legal name to reference
+                query: {
+                    presets: ['es2015'],
+                    plugins: ['transform-runtime']
+                }
             },
             {
                 test: /\.css$/, // Only .css files

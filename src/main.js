@@ -4,8 +4,10 @@ require('./scss/main.scss');
 
 var Vue = require('vue');
 
-Vue.use(require('vue-resource'));
+let $ = require('jquery');
 
+Vue.use(require('vue-resource'));
+Vue.config.async = false; // 为了渲染完 experience 后能取到 code 做高亮染色
 
 let app = new Vue({
     el: '#app',
@@ -19,14 +21,29 @@ let app = new Vue({
     },
     methods: {
         
+    },
+    ready: function(){
+        this.$el.style.display = 'block';
+
+        let $letters = $('.letter');
+        console.log($letters);
+        let i = 0, max = $letters.length,
+            lastShow;
+        let f = function(){
+            lastShow && lastShow.removeClass('active');
+            let e = $($letters[i % max]);
+            e.addClass('active');
+            lastShow = e;
+            i++;
+        };
+        setInterval(f, 5000);
+        setTimeout(f);
+        
     }
 });
 
 // document.addEventListener("DOMContentLoaded", function(event) {
-
 // });
-
-
 
 let loading = require('./loading');
 

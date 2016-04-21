@@ -1,37 +1,152 @@
 @import "./common";
 @import "./letter";
 
+
+$footer-height: 7rem;
+
 #app {
-    margin: 0;
+    margin: -$footer-height auto 0;
     padding: 0;
     height: 100%;
     width: 100%;
-
+    position: relative;
+    overflow: hidden;
+    
     .main {
+        /* border: { */
+        /*     width: 0px 3rem; */
+        /*     style: solid; */
+        /*     color: #021002; */
+        /* } */
         height: 100%;
-        padding: 3rem 2rem;
+        padding: $footer-height 2rem 0px;
         box-sizing: border-box;
+        width: 1240px;
+        margin: 0 auto;
+        //background-color: #9cccae;
     }
 
-    .slide-dash {
-        border: 1px solid black;
+    .slide-dash {        
         display: inline-block;
         width: 60%;
         float: left;
         height: 100%;
-        box-sizing: border-box;
+        background: {
+            image: url(~!file!../static/img/how-to-write-a-book-1103081-TwoByOne.jpg);
+        }
+        
+        &.off {
+            display: none;
+        }
+
+        .letters {
+            position: relative;
+            top: 40%;
+            left: 10%;
+            .letter {
+                height: 420px;
+                width: 300px;
+                li {
+                    //background-color: black;
+                }
+            }
+        }
+        
+        .box {
+            border: {
+                width: 40px 0px 40px 10px;
+                style: solid;
+                color: black;
+            }
+            height: 80%;
+            width: auto;
+            margin: 3rem;
+            box-sizing: border-box;
+            position: relative;
+            background: {
+                color: white;
+                image: linear-gradient(to right, white, #9cccae);
+            }
+            .sprout-head {
+                box-shadow: 0px 0px 20px #0561b7;
+                border-radius: 50%;
+            }
+
+            .layer {
+                mix-blend-mode: multiply;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                }
+
+                .mask {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    mix-blend-mode: screen;
+                    background-color: #fff;
+                    .circle {
+                        pointer-events: none;
+                        position: absolute;
+                        background-color: #000;
+                        top: 30%;
+                        left: 30%;
+                        height: 300px;
+                        width: 300px;
+                        border-radius: 50%;
+
+                    }
+                }
+            }
+        }
     }
 
     .category-list {
+        position: relative;
         overflow: scroll;
         display: inline-block;
         float: left;
         width: 40%;
         height: 100%;
-        background-color: white;
+        //background-color: white;
+        box-sizing: border-box;
+        //box-shadow: 2px 0px 10px white;
+        
+        &.left {
+            background-color: transparent;
+        }
+    }
+
+    .experience-list {
+        display: inline-block;
+        float: left;
+        width: 60%;
+        box-sizing: border-box;
+        &.off {
+            display: none;
+        }
     }
 }
 
 ::-webkit-scrollbar { 
     display: none; 
+}
+
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: $footer-height;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    
 }

@@ -9,12 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="cleartype" content="on">
 
+    <link rel="stylesheet" href="static/hl-styles/github-gist.css">
     <!-- loading css -->
     <style>
       html, body {
       margin: 0;
       padding: 0;
-      background-color: #C7D693;
+
       height: 100%;
       width: 100%;
       }
@@ -82,33 +83,66 @@
       <div class="dot2"></div>
     </div>
     
-    <div id="app">
-
-
+    <div id="app" style="display: none;">
+      
       <div class="main">
         
-        <div class="slide-dash">
-
+        <div class="slide-dash" v-bind:class="{'off': !onCategory}">
+          
+          
           <!-- <ul class="letter letter-e"> -->
           <!--   <li></li> -->
           <!--   <li></li> -->
           <!--   <li></li> -->
           <!--   <li></li> -->
           <!-- </ul> -->
+          <!-- <div class="box"> -->
+
+          <!--   <\!-- <img class="sprout-head" alt="" src="static/img/sprout-head.png"/> -\-> -->
+
+          <!--   <div class="layer"> -->
+          <!--     <img src="static/img/how-to-write-a-book-1103081-TwoByOne.jpg"> -->
+          <!--     <div class="mask"> -->
+          <!--       <div class="letters"> -->
+          <!--         <\!-- <ul class="letter letter-e"> -\-> -->
+          <!--         <\!--   <li></li> -\-> -->
+          <!--         <\!--   <li></li> -\-> -->
+          <!--         <\!--   <li></li> -\-> -->
+          <!--         <\!--   <li></li> -\-> -->
+          <!--         <\!-- </ul> -\-> -->
+
+          <!--         <ul class="letter letter-x"> -->
+          <!--           <li></li> -->
+          <!--           <li></li> -->
+          <!--         </ul> -->
+          <!--       </div> -->
+                
+          <!--     </div> -->
+          <!--   </div> -->
+            
+          <!-- </div> -->
           
         </div>
 
-        <div class="category-list">
+        <div class="category-list" v-bind:class="{'left': !onCategory}">
           <w-category v-bind:class="{'off': !onCategory}"></w-category>
         </div>
-        
-      </div>
-      <!-- <w-category v-bind:class="{'off': !onCategory}"></w-category> -->
 
-      <!-- <w-experience v-bind:class="{'off': onCategory}"></w-experience> -->
+        <div class="experience-list" v-bind:class="{'off': onCategory}">
+          <w-experience v-bind:class="{'off': onCategory}"></w-experience>
+        </div>
+      </div>
+      
       
     </div>
+    <footer>
+      
+    </footer>
     
-    <script src="/assets/mainBundle.js"></script>
+    
+    <script src="assets/mainBundle.js"></script>
+    <script src="static/js/highlight.pack.js"></script>
+
+
   </body>
 </html>

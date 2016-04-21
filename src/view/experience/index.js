@@ -2,10 +2,9 @@
 
 require('./style.scss');
 
+
 let $ = require('jquery');
 
-
-//let $ = require('jquery');
 
 module.exports = {
     template: require('./template.html'),
@@ -22,15 +21,18 @@ module.exports = {
         changeCategory: function(category) {
             let self = this;
             this.$http.get(category + '/' + category + '-0.json', (data) => {
-                console.log(data);
                 self.experiences = data;
+
+                $('code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });
+
+                
             });
         }
     },
     ready: function(){
-        $(document).on('click', function(){
-            console.log('click');
-        });
+        
     }
 };
 

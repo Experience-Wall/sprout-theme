@@ -5,8 +5,9 @@
 
 w-experience {
     display: block;
-    position: absolute;
-    width: 75%;
+
+    overflow: scroll;
+    width: 90%;
     height: 100%;
     top: 0;
     right: 0;

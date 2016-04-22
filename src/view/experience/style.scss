@@ -3,11 +3,25 @@
 @import "./../../scss/_ceaser-easing.sass";
 @import "./../../scss/ceaser-easing/_easing-vars.sass";
 
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " "; // 1
+                      display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+
+
 w-experience {
     display: block;
-    position: absolute;
-    width: 75%;
-    height: 100%;
+
+    overflow: scroll;
+    width: 100%;
     top: 0;
     right: 0;
     transition: all 1.2s ceaser($easeOutCubic);
@@ -17,26 +31,52 @@ w-experience {
     }
     
     ul {
+        @include clearfix;
         list-style: none;
-        width: 85%;
+        width: 97%;
+        margin: 0;
+        padding: 1rem 0 0;
     }
     
     li {
         background-color: #fff;
         border-radius: 1px;
-        box-shadow: 2px 2px 5px #999;
+        box-shadow: 0px 0px 5px #999;
         padding: 8px 16px;
-        margin: 24px 0;
+        margin: 24px 15px;
         overflow: hidden;
-        
+        transition: transform, box-shadow;
         & > div {
             margin: 0;
             padding: 0;
             overflow: hidden;
         }
+
+        &:hover {
+            transform: scale(1.01, 1.01);
+            box-shadow: 0px 0px 15px #bbb;
+        }
         
         h2, p {
             margin: 0;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin: 0.5rem auto 0.3rem;
+            color: #185959;
+        }
+        
+        .date {
+            font: {
+                size: 0.8rem;
+            }
+            color: #999;
+            margin-bottom: 0.8rem;
+        }
+        
+        .content {
+            color: #333;
         }
     }
 

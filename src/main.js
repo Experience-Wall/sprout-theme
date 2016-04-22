@@ -25,22 +25,26 @@ let app = new Vue({
     ready: function(){
         this.$el.style.display = 'block';
 
-        let $letters = $('.letter');
-        console.log($letters);
-        let i = 0, max = $letters.length,
-            lastShow;
-        let f = function(){
-            lastShow && lastShow.removeClass('active');
-            let e = $($letters[i % max]);
-            e.addClass('active');
-            lastShow = e;
-            i++;
-        };
-        setInterval(f, 5000);
-        setTimeout(f);
+        // let $letters = $('.letter');
+        // console.log($letters);
+        // let i = 0, max = $letters.length,
+        //     lastShow;
+        // let f = function(){
+        //     lastShow && lastShow.removeClass('active');
+        //     let e = $($letters[i % max]);
+        //     e.addClass('active');
+        //     lastShow = e;
+        //     i++;
+        // };
+        // setInterval(f, 5000);
+        // setTimeout(f);
+
+        
         
     }
 });
+
+
 
 // document.addEventListener("DOMContentLoaded", function(event) {
 // });
@@ -66,3 +70,10 @@ let route = () => {
 
 window.addEventListener('hashchange', route);
 window.addEventListener('load', route);
+
+
+
+window.addEventListener('load', () => {
+    
+    require('./canvasBird.js');
+});

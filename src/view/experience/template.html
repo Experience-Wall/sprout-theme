@@ -1,14 +1,13 @@
 <ul>
 
-   <li v-for="experience in experiences" transition="expl" stagger="100">
+  <li v-for="experience in experiences" transition="expl" stagger="100">
+    <div>
+      <h2>{{ experience.info.title }}</h2>
+      <p class="date">{{ experience.info.date }}</p>
+      
+      <div class="content">{{{ experience.experience }}}</div>
+    </div>
 
-     <div>
-       <h2>{{ experience.info.title }}</h2>
-       <p>{{ experience.info.date }}</p>
-
-       <div>{{{ experience.experience }}}</div>
-     </div>
-    
   </li>
   
 </ul>

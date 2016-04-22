@@ -2,7 +2,64 @@
 @import "./letter";
 
 
-$footer-height: 7rem;
+$footer-height: 2rem;
+$header-height: 2em;
+
+$large-width: 960px;
+
+header {
+    height: $header-height;
+    line-height: $header-height;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 50;
+
+    ul {
+        overflow: hidden;
+        width: $large-width;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            float: left;
+            margin-right: 1rem;
+
+            &:last-child {
+                margin-right: 0;    
+            }
+        }
+        
+        a {
+            color: white;
+            &:active {
+                color: white;
+            }
+        }
+
+        
+    }
+}
+
+#container {
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    &.full {
+        width: 100%;
+        z-index: 5;
+    }
+}
 
 #app {
     margin: -$footer-height auto 0;
@@ -11,19 +68,23 @@ $footer-height: 7rem;
     width: 100%;
     position: relative;
     overflow: hidden;
+
+    
     
     .main {
-        /* border: { */
-        /*     width: 0px 3rem; */
-        /*     style: solid; */
-        /*     color: #021002; */
-        /* } */
+        border: {
+            width: 0px 1px;
+            style: solid;
+            color: #eee;
+        }
+        position: relative;
         height: 100%;
-        padding: $footer-height 2rem 0px;
+        box-shadow: 0px 0px 10px #999;
         box-sizing: border-box;
-        width: 1240px;
+        width: $large-width;
         margin: 0 auto;
         //background-color: #9cccae;
+        
     }
 
     .slide-dash {        
@@ -31,12 +92,113 @@ $footer-height: 7rem;
         width: 60%;
         float: left;
         height: 100%;
-        background: {
-            image: url(../static/img/how-to-write-a-book-1103081-TwoByOne.jpg);
-        }
-        
+        overflow: hidden;
+        position: relative;
         &.off {
             display: none;
+        }
+
+        &--bg {
+            height: 100%;
+        }
+
+
+        .slide-main-text {
+            position: absolute;
+            width: 70%;
+            bottom: 10%;
+            left: 10%;
+            text-align: center;
+            color: white;
+            img {
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+            }
+            
+            &--title {
+                color: #f2f0ab;
+                text-shadow: 0 0 3px #333;
+                margin-bottom: 1.5rem;
+                font: {
+                    family: Skia;
+                    size: 2rem;
+                }
+            }
+
+            &--text {
+                line-height: 1.5rem;
+                text-shadow: 0 0 3px #333;
+            }
+        }
+        
+        .fonts {
+            position: absolute;
+            height: 100%;
+            width: 30%;
+            right: -4rem;
+            top: 20%;
+            font: {
+                family: Herculanum;
+                size: 4.5rem;
+                weight: 700;
+            }
+            p {
+                margin: 0;
+                color: white;
+                line-height: 3.5rem;
+                text-shadow: 0 0 30px white;
+                &:nth-child(1) {
+                    margin-left: 1.5rem;
+                }
+                &:nth-child(3) {
+                    margin-left: 1.5rem;
+                }
+                &:nth-child(4) {
+                    margin-left: 0.5rem;
+                }
+                &:nth-child(5) {
+                    margin-left: 1.5rem;
+                }
+                &:nth-child(7) {
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+
+        .layer {
+            mix-blend-mode: multiply;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+            }
+
+            .mask {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                mix-blend-mode: screen;
+                background-color: #fff;
+                .circle {
+                    pointer-events: none;
+                    position: absolute;
+                    background-color: #000;
+                    top: 30%;
+                    left: 30%;
+                    height: 300px;
+                    width: 300px;
+                    border-radius: 50%;
+
+                }
+            }
         }
 
         .letters {
@@ -44,8 +206,8 @@ $footer-height: 7rem;
             top: 40%;
             left: 10%;
             .letter {
-                height: 420px;
-                width: 300px;
+                height: 300px;
+                width: 200px;
                 li {
                     //background-color: black;
                 }
@@ -72,44 +234,13 @@ $footer-height: 7rem;
                 border-radius: 50%;
             }
 
-            .layer {
-                mix-blend-mode: multiply;
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                top: 0;
-                left: 0;
-                overflow: hidden;
-
-                img {
-                    height: 100%;
-                }
-
-                .mask {
-                    position: absolute;
-                    height: 100%;
-                    width: 100%;
-                    top: 0;
-                    left: 0;
-                    mix-blend-mode: screen;
-                    background-color: #fff;
-                    .circle {
-                        pointer-events: none;
-                        position: absolute;
-                        background-color: #000;
-                        top: 30%;
-                        left: 30%;
-                        height: 300px;
-                        width: 300px;
-                        border-radius: 50%;
-
-                    }
-                }
-            }
+            
         }
     }
 
     .category-list {
+        
+        z-index: 7;
         position: relative;
         overflow: scroll;
         display: inline-block;
@@ -119,17 +250,34 @@ $footer-height: 7rem;
         //background-color: white;
         box-sizing: border-box;
         //box-shadow: 2px 0px 10px white;
+        w-category {
+            margin-top: 1.5rem;
+        }
         
         &.left {
             background-color: transparent;
+            width: 20%;
+
+            w-category {
+                margin-top: 2rem;
+            }
         }
     }
 
     .experience-list {
+        position: relative;
+        z-index: 7;
         display: inline-block;
         float: left;
-        width: 60%;
+        width: 80%;
+        height: 100%;
+        overflow: scroll;
         box-sizing: border-box;
+
+        w-experience {
+            margin: 5rem auto 2rem;
+        }
+        
         &.off {
             display: none;
         }
@@ -145,8 +293,34 @@ footer {
     position: absolute;
     width: 100%;
     height: $footer-height;
+    line-height: $footer-height;
     background-color: black;
     bottom: 0;
     left: 0;
-    
+
+    p {
+        color: white;
+        display: inline-block;
+        width: 80%;
+        margin: 0;
+        font: {
+            size: 90%;
+        }
+        color: #ddd;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: right;
+        margin-right: 2rem;
+        li {
+            display: inline-block;
+            margin: 0;
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
 }

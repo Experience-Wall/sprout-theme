@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Experience-Wall/sprout-theme#readme",
   "dependencies": {
     "babel-plugin-transform-runtime": "^6.7.5",
+    "css-loader": "^0.23.1",
     "es5-shim": "^4.1.15",
     "gulp": "^3.9.0",
     "gulp-watch": "^4.3.5",
@@ -27,6 +28,7 @@
     "jquery": "^1.11.3",
     "memory-fs": "^0.2.0",
     "sass": "^0.5.0",
+    "style-loader": "^0.13.1",
     "vue": "^1.0.8",
     "vue-resource": "^0.1.17",
     "vue-router": "^0.7.6",

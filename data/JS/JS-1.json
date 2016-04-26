@@ -1,0 +1,9 @@
+[ {
+  "info" : {
+    "title" : "移动端不要设置过多timer",
+    "date" : "2016-01-17 13:22:20",
+    "tag" : ""
+  },
+  "experience" : "<p>移动端js性能是硬伤，使用过多的 setTimeout 或者 setInteral 会卡帧，应该使用 css 来实现效果</p>",
+  "index" : 10
+} ]

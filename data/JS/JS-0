@@ -1,11 +1,27 @@
 [ {
   "info" : {
+    "title" : "vue的ready并不是domcument loaded",
+    "date" : "2016-04-23 15:52:12",
+    "tag" : ""
+  },
+  "experience" : null,
+  "index" : 0
+}, {
+  "info" : {
+    "title" : "console是异步的",
+    "date" : "2016-04-23 15:51:48",
+    "tag" : ""
+  },
+  "experience" : null,
+  "index" : 1
+}, {
+  "info" : {
     "title" : "canvas的高宽不能用css定",
     "date" : "2016-04-09 06:37:46",
     "tag" : ""
   },
   "experience" : "<p>canvas 的高宽如果用css定的话貌似没有问题，但是一旦用 drawImage 这个 api 的时候就会出现问题，画出来的图片会变形，铺满屏幕。</p>",
-  "index" : 0
+  "index" : 2
 }, {
   "info" : {
     "title" : "js click事件卡住会掉两次",
@@ -13,7 +29,7 @@
     "tag" : ""
   },
   "experience" : "<p>js 调用 cordova 插件，调用微博分享，由于卡住了，webview 自动把 click 事件再触发一次</p>",
-  "index" : 1
+  "index" : 3
 }, {
   "info" : {
     "title" : "Date",
@@ -21,7 +37,7 @@
     "tag" : ""
   },
   "experience" : "<pre><code class=\"javascript\">            format: function&#40;date, format&#41;{\n                if&#40;format === undefined&#41;{\n                    format = date;\n                    date = new Date&#40;&#41;;\n                }\n                \n                var map = {\n                    &quot;M&quot;: date.getMonth&#40;&#41; + 1, //月份 \n                    &quot;d&quot;: date.getDate&#40;&#41;, //日 \n                    &quot;h&quot;: date.getHours&#40;&#41;, //小时 \n                    &quot;m&quot;: date.getMinutes&#40;&#41;, //分 \n                    &quot;s&quot;: date.getSeconds&#40;&#41;, //秒 \n                    &quot;q&quot;: Math.floor&#40;&#40;date.getMonth&#40;&#41; + 3&#41; / 3&#41;, //季度 \n                    &quot;S&quot;: date.getMilliseconds&#40;&#41; //毫秒 \n                };\n                format = format.replace&#40;/&#40;&#91;yMdhmsqS&#93;&#41;+/g, function&#40;all, t&#41;{\n                    var v = map&#91;t&#93;;\n                    if&#40;v !== undefined&#41;{\n                        if&#40;all.length &gt; 1&#41;{\n                            v = '0' + v;\n                            v = v.substr&#40;v.length-2&#41;;\n                        }\n                        return v;\n                    }\n                    else if&#40;t === 'y'&#41;{\n                        return &#40;date.getFullYear&#40;&#41; + ''&#41;.substr&#40;4 - all.length&#41;;\n                    }\n                    return all;\n                }&#41;;\n                return format;\n            }\n</code></pre>",
-  "index" : 2
+  "index" : 4
 }, {
   "info" : {
     "title" : "requestAnimationFrame 绑定 this",
@@ -29,7 +45,7 @@
     "tag" : ""
   },
   "experience" : "<p>深渊巨坑，在面向对象编程中 requestAnimationFrame 的函数必须 绑定 this，不然获取不了函数的 this</p>",
-  "index" : 3
+  "index" : 5
 }, {
   "info" : {
     "title" : "canvas在页面加载时候的阻塞",
@@ -37,7 +53,7 @@
     "tag" : ""
   },
   "experience" : "<p>canvas 在页面加载的时候会阻塞一会，原因不明，与 onload 事件 无关在， chrome上的表现是加载的时候绘制了一小块，阻塞个一秒又开始绘制</p>",
-  "index" : 4
+  "index" : 6
 }, {
   "info" : {
     "title" : "zepto $.ajax 的method是type",
@@ -45,7 +61,7 @@
     "tag" : ""
   },
   "experience" : "<p>zepto ajax 的option method 不是 method， 是type，尼玛，害死人</p>",
-  "index" : 5
+  "index" : 7
 }, {
   "info" : {
     "title" : "一个页面中的show-hide问题",
@@ -53,7 +69,7 @@
     "tag" : ""
   },
   "experience" : "<p>遇到复杂的交互控制页面子元素 show hide 问题宜使用设计模式解决。</p>",
-  "index" : 6
+  "index" : 8
 }, {
   "info" : {
     "title" : "小项目也要注意模块化",
@@ -61,13 +77,5 @@
     "tag" : ""
   },
   "experience" : "<p>注意模块化，或者足够小只写一个文件，不要在一个文件里面写几个 closure </p>",
-  "index" : 7
-}, {
-  "info" : {
-    "title" : "移动端不要设置过多timer",
-    "date" : "2016-01-17 13:22:20",
-    "tag" : ""
-  },
-  "experience" : "<p>移动端js性能是硬伤，使用过多的 setTimeout 或者 setInteral 会卡帧，应该使用 css 来实现效果</p>",
-  "index" : 8
+  "index" : 9
 } ]

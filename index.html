@@ -81,11 +81,13 @@
 
     <header>
       <ul>
-        <li><a href="#/">Experience Index</a></li>
+        <li><a href="#/">Experience-Index</a></li>
         <li><a href="">Homesite</a></li>
         <li><a href="">Blog</a></li>
         <li><a href="">Github</a></li>
+        <li style="float: right;"><a href="">About Experience-Wall</a></li>
       </ul>
+
     </header>
     <div class="dash-loadding spinner" id="loading" v-show="show">
       <div class="dot1"></div>
@@ -98,7 +100,7 @@
         <div id="container" v-bind:class="{'full': !onCategory}"></div>
         <div class="slide-dash" v-bind:class="{'off': !onCategory}">
           
-          <img src="static/img/ArkansasGeese_ZH-CN11140946197_1366x768.jpg">
+          <img class="slide-dash--bg" src="static/img/ArkansasGeese_ZH-CN11140946197_1366x768.jpg">
 
           <div class="fonts">
             <p>E</p>
@@ -195,17 +197,16 @@
       </ul>
     </footer>
     
-    <script src="static/js/three.min.js"></script>
+    <script async src="static/js/threeBundle.min.js"></script>
 
-    <script async src="static/js/Projector.js"></script>
-    <script async src="static/js/CanvasRenderer.js"></script>
-    <script async src="static/js/Bird.js"></script>
+    <!-- <script async src="static/js/Projector.js"></script> -->
+    <!-- <script async src="static/js/CanvasRenderer.js"></script> -->
+    <!-- <script async src="static/js/Bird.js"></script> -->
 
 
     <script src="static/js/highlight.pack.js"></script>
     
     <script src="assets/mainBundle.js"></script>
-    
     
     <!-- <script async defer src="static/js/canvasBird.js"></script> -->
     

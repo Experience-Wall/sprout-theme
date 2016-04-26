@@ -34,6 +34,9 @@ var config = {
                 loaders: ["style", "css", "sass"]
             },
             {
+                test: /\.jpg$/,    loader: "url-loader"
+            },
+            {
                 test: /\.html$/, loader: "html"
             }
         ]

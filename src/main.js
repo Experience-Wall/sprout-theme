@@ -74,6 +74,6 @@ window.addEventListener('load', route);
 
 
 window.addEventListener('load', () => {
-
-    //require('./canvasBird.js');
+    
+    require('./canvasBird.js');
 });

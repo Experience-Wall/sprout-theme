@@ -22,12 +22,19 @@ w-category {
             height: 5rem;
             width: 5rem;
             line-height: 5rem;
-            margin: 2rem;
+            margin: 30%;
+
+            .c-name-container a {
+                padding-left: 0;
+            }
+            
             &:hover {
                 transform: scale(1.2, 1.2);
                 /* transform: scale3d(0.9, 0.9, 1); */
             }
         }
+
+        
         
         .c-name-container {
             font-size: 80%;
@@ -63,6 +70,10 @@ w-category {
                 .c-name-container a {
                     font-size: 110%;
                 }
+
+                .c-number {
+                    box-shadow: 0 0 20px #1B5E20;
+                }
             }
         }
         
@@ -71,17 +82,18 @@ w-category {
             display: inline-block;
             width: 100%;
             height: 100%;
-            margin-left: 5%;
+
             text-align: left;
             vertical-align: middle;
             overflow: hidden;
             
             a {
+                padding-left: 2rem;
                 display: block;
                 height: 100%;
                 width: 100%;
-                transition: font-size;
-                color: black;
+                transition: font-size 0.1s;
+                color: #258c81;
                 font: {
                     weight: 700;
                 }
@@ -109,7 +121,7 @@ w-category {
             vertical-align: middle;
             box-shadow: 0 0 4px #1B5E20;
             text-shadow: 0 0 1px white;
-             
+            
             &::after {
                 content: "";
                 height: 110%;

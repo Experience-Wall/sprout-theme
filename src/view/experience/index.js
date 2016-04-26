@@ -6,9 +6,11 @@ require('./style.scss');
 let $ = require('jquery');
 
 var renderHl = function(){
-    $('code').each(function(i, block) {
-        hljs.highlightBlock(block);
-    });
+    setTimeout(function(){
+        $('code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+    }, 1000);
 };
 
 module.exports = {
